@@ -23,7 +23,9 @@ public class TestGLed extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        GLed led = new GLed();
+        //GLed led = new GLed();
+        GLed led = new GLedClickable();
+        
         Button button = new Button("Change");
         button.setOnAction(new EventHandler<ActionEvent>() {
 

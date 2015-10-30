@@ -24,7 +24,7 @@ import java.beans.PropertyChangeListener;
 public class TestGLed {
     private JFrame jf ; 
     private JButton btnOnOff ; 
-    private GLed lPink ;
+    private GLed led ;
     
     /**
      * Creates a new instance of JLedFrameTest
@@ -34,15 +34,17 @@ public class TestGLed {
         btnOnOff = new JButton("On/Off"); 
         btnOnOff.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                lPink.setOn(!lPink.isOn());
+                led.setOn(!led.isOn());
             }
         });
-        lPink = new GLed() ;
-        lPink.setColor(Color.RED);
+        
+        //led = new GLed() ;
+        led = new GLedClickable();        
+        led.setColor(Color.RED);
 
         jf.setPreferredSize(new Dimension(200, 200));        
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jf.add(lPink, BorderLayout.CENTER);
+        jf.add(led, BorderLayout.CENTER);
         jf.add(btnOnOff, BorderLayout.SOUTH);
         jf.pack() ; 
         jf.setVisible(true);
