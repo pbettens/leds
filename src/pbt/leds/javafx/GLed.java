@@ -24,8 +24,7 @@ public class GLed extends Parent {
 
         @Override
         public Object getBean() {
-            System.out.println("@todo");
-            return color;
+            return this;
         }
 
         @Override
@@ -34,7 +33,7 @@ public class GLed extends Parent {
         }
     };
 
-    private Circle circle;
+    private final Circle circle;
     
     public GLed() {
         circle = new Circle(50);
@@ -66,7 +65,9 @@ public class GLed extends Parent {
     
     public final void setColor(Color c){
         color.set(c);
-        circle.setFill(c);
+        if (on.get()) {
+            circle.setFill(c);
+        }
     }
     
     public final ObjectProperty<Color> colorProperty(){
