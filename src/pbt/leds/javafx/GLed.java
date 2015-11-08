@@ -48,7 +48,7 @@ public class GLed extends Parent {
         if (aon) {
             circle.setFill(color.get());
         } else {
-            circle.setFill(Color.WHITE);
+            circle.setFill(Color.TRANSPARENT);
         }
     }
     
