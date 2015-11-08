@@ -32,7 +32,7 @@ public class LedOnColor {
 
         @Override
         public Object getBean() {            
-            return color;
+            return this;
         }
 
         @Override
