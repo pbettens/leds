@@ -76,7 +76,7 @@ public class GLed extends JPanel
         // bean but for this.on and on.         
         boolean oldValue = this.on ; 
         this.on = newValue ;
-        irePropertyChange(PROPERTY_ON,oldValue,newValue);
+        firePropertyChange(PROPERTY_ON,oldValue,newValue);
         repaint();
     }
    
