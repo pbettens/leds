@@ -52,9 +52,9 @@ public class GLed extends JPanel
         }
         Color oldValue = this.color;
         this.color = color;
-        if (!oldValue.equals(color)) {
-            firePropertyChange(PROPERTY_COLOR, oldValue, color);
-        }
+        // Inutile de vérifier que les valeurs sont différentes, le file
+        // s'en charge
+        firePropertyChange(PROPERTY_COLOR, oldValue, color);
         repaint();
     }
 
@@ -76,9 +76,7 @@ public class GLed extends JPanel
         // bean but for this.on and on.         
         boolean oldValue = this.on ; 
         this.on = newValue ;
-        if ( oldValue != newValue) {
-            this.firePropertyChange(PROPERTY_ON,oldValue,newValue);
-        }
+        irePropertyChange(PROPERTY_ON,oldValue,newValue);
         repaint();
     }
    
