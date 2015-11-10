@@ -25,7 +25,8 @@ public class TestGLed extends Application {
     public void start(Stage primaryStage) {
         //GLed led = new GLed();
         //GLed led = new GLedClickable();
-        GLed led = new GLedClickableNoimplement();
+        //GLed led = new GLedClickableNoimplement();
+        GLedBinding led = new GLedBinding();
         
         Button button = new Button("Change");
         button.setOnAction(new EventHandler<ActionEvent>() {
