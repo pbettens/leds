@@ -8,7 +8,11 @@ Sens conseillé de lecture
   javafx et deux propriétés pour swing 
 * `LedOnColor` Un bean non grapgique avec deux propriété
 * `GLed` Ajout de l'aspect graphique de la led. C'est un disque rouge. 
-* `GLedClickable` ajout de la capaité à s'écouter soi-même ^^
+* `GLedClickable` ajout de la capacité à s'écouter soi-même ^^
+* `GLedClickableNoimplement` version sans implémenter d'interface, avec une 
+  classe interne anonyme. 
+* `GLedBinding` version utilisant un *binding* des propriétés *color* et *on*
+  avec la proprité *fill* de *Circle*. (Assez élégante). 
 
 
 Pierre Bettens <pbettens@heb.be>
