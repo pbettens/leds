@@ -13,6 +13,14 @@ public class GLedClickableNoimplement extends GLed {
 
     public GLedClickableNoimplement() {
         super();
+        this.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent event) -> {
+            setOn(!isOn());
+        });
+    }
+    
+    /* 
+    public GLedClickableNoimplement() {
+        super();
         this.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
 
             @Override
@@ -21,5 +29,6 @@ public class GLedClickableNoimplement extends GLed {
             }
         });
     }
+    */
     
 }
