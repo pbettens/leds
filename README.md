@@ -13,7 +13,7 @@ Sens conseillé de lecture
 * `GLedClickableNoimplement` version sans implémenter d'interface, avec une 
   classe interne anonyme. 
 * `GLedBinding` version utilisant un *binding* des propriétés *color* et *on*
-  avec la proprité *fill* de *Circle*. (Assez élégante). 
+  avec la propriété *fill* de *Circle*. (Assez élégante). 
 
 
 Pierre Bettens <pbettens@heb.be>
