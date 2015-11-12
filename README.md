@@ -5,9 +5,9 @@ Codes illustratifs du billet [homonyme][blog].
 Sens conseillé de lecture
 
 * `LedOn` Un bean non graphique avec une seule propriété « primitive » pour
-  javafx et deux propriétés pour swing. `TestLedOn` permet de voir l'ajout 
+  JavaFX et deux propriétés pour Swing. `TestLedOn` permet de voir l'ajout 
   d'un écouteur à la led. 
-* `LedOnColor` Un bean non grapgique avec deux propriété
+* `LedOnColor` Un bean non graphique avec deux propriétés
 * `GLed` Ajout de l'aspect graphique de la led. C'est un disque rouge. 
 * `GLedClickable` ajout de la capacité à s'écouter soi-même ^^
 * `GLedClickableNoimplement` version sans implémenter d'interface, avec une 
@@ -19,3 +19,5 @@ Sens conseillé de lecture
 Pierre Bettens <pbettens@heb.be>
 
 ![Licence CC-BY-NC-SA](cc-by-nc-sa.png)
+
+[blog]:http://namok.be/blog/?post/2015/11/09/javabean-graphique-swing-javafx
