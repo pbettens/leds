@@ -49,12 +49,16 @@ public class GLedBinding extends Parent {
         circle = new Circle(50);
         circle.setFill(color.get());
         circle.setStroke(Color.BLACK);
+      
         /* 
          * Révision du binding. 
-         * Je ne peux pas me contenter de ce qui suit si je veux que la mise
-         * à jour se fasse aussi lorsque je change de couleur. 
+         * Je ne peux pas me contenter de ceci car le "on" n'est pas pris en 
+         * compte. 
+        circle.fillProperty().bind(color); 
+         * Je ne peux pas non plus me contenter de ce qui suit si je veux que 
+         * la mise à jour se fasse aussi lorsque je change de couleur. 
          * (impossible d'utiliser un setter sur une propriété liée)
-         *  
+         *          
         circle.fillProperty().bind(
                 Bindings.when(on)
                         .then(color.get())
