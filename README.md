@@ -20,4 +20,4 @@ Pierre Bettens <pbettens@heb.be>
 
 ![Licence CC-BY-NC-SA](cc-by-nc-sa.png)
 
-[blog]:http://namok.be/blog/?post/2015/11/09/javabean-graphique-swing-javafx
+[blog]:https://blog.namok.be/?post/2015/11/09/javabean-graphique-swing-javafx
